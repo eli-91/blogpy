@@ -1,1 +1,7 @@
 .idea/
+
+#DB
+db.sqlite3
+
+#Migration
+blog/migrations/
