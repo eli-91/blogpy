@@ -121,15 +121,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+# CKEditor Settings
 STATIC_URL = 'static/'
+# STATIC_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# CKEditor Settings
-STATIC_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Ckeditor
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
