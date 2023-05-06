@@ -1,7 +1,18 @@
+.DB_Store
 .idea/
 
-#DB
+# Virtual Env
+venv/
+blogpy/__pycache__/
+
+# DB
 db.sqlite3
 
-#Migration
+# Migration
 blog/migrations/
+
+# Credentials
+.env
+
+# Static files
+files/
